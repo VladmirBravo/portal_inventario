@@ -2,14 +2,16 @@ import React from 'react';
 import { render } from 'react-dom';
 import {
     Navbar,
-    Footer
+    Footer,
+    MenuLista
 } from './componentes';
 
 function App() {
     return (
         <div>
             <Navbar />
-            <Footer/>
+            <MenuLista />
+            <Footer />
         </div>
     );
 }

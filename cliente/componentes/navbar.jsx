@@ -30,7 +30,7 @@ export function Navbar() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
-                        News
+                        Nome da Empresa
           </Typography>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
