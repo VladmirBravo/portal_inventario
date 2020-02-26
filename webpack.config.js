@@ -22,7 +22,6 @@ const settings = {
     filename: '[name].[contenthash].js',
     cssFilename: '[name].css',
     cssChunkFilename: '[name].[contenthash].css',
-    client: `${dist}/cliente`,
     html: './cliente/index.html'
   }
 };
@@ -34,7 +33,7 @@ module.exports = {
   stats: 'verbose',
   output: {
     filename: settings.output.filename,
-    path: path.join(__dirname, settings.output.client)
+    path: path.join(__dirname, dist)
   },
   plugins: [
     new HTMLWebpackPlugin({
@@ -57,7 +56,7 @@ module.exports = {
     }])
   ],
   devServer: {
-    contentBase: path.join(__dirname, settings.output.client),
+    contentBase: path.join(__dirname, dist),
     port: process.env.CLIENT_PORT,
     open: true,
     compress: true,
