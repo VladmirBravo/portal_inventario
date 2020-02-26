@@ -3,8 +3,6 @@ const webpack = require('webpack');
 const path = require('path');
 // plugins
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -94,11 +92,6 @@ module.exports = {
       }
     },
     minimizer: [
-      new UglifyJsPlugin({
-        cache: true,
-        parallel: true,
-        sourceMap: false
-      }),
       new OptimizeCSSAssetsPlugin({})
     ]
   },

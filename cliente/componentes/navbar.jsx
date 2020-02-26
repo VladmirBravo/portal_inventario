@@ -30,9 +30,16 @@ export function Navbar() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
-                        Nome da Empresa
-          </Typography>
-                    <Button color="inherit">Login</Button>
+
+                        <Button color="inherit">Pagina Inicial</Button>
+                    </Typography>
+                    <Typography variant="h6" className={classes.title}>
+                        <Button color="inherit">Sistema de Informação</Button>
+                    </Typography>
+                    <Typography variant="h6" className={classes.title}>
+                        <Button color="inherit">Quem Somos</Button>
+                    </Typography>
+                    <Button color="inherit">Login</Button>                    
                 </Toolbar>
             </AppBar>
         </div>
