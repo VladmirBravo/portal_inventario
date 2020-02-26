@@ -42,7 +42,7 @@ module.exports = {
         removeAttributeQuotes: true,
         removeComments: true,
         collapseWhitespace: true,
-        html5: true
+        html5: true 
       }
     }),
     new webpack.HashedModuleIdsPlugin(),
